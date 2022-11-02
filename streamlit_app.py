@@ -25,7 +25,7 @@ Option_list = streamlit.selectbox("Pick a color or style:",list(color_list))
 
 #Use the option selected to get the information from the database 
 
-my_cur.execute("select direct_url, price, size_list, upsell_product_desc from catalog_for_website where color_or_style ="+ option_list + ";")
+my_cur.execute("select direct_url, price, size_list, upsell_product_desc from catalog_for_website where color_or_style ='"+ option_list + "';")
 
 df2 = my_cur.fetchone()
 
