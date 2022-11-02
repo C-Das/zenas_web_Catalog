@@ -19,7 +19,9 @@ df = pandas.DataFrame(my_catalog)
 #streamlit.text(df)
 
 color_list = df[0].values.tolist()
-print(color_list)
+#print(color_list)
+
+Option_list = streamlit.selectbox("Pick a color or style:",list(color_list))
 
 #streamlit.text("Hello from Snowflake")
 #streamlit.text(my_data_row)
