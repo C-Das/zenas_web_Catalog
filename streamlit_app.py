@@ -16,7 +16,10 @@ my_catalog = my_cur.fetchall()
 df = pandas.DataFrame(my_catalog)
 
 #Temp:Write the dataframe to the screen to check the data frame is working 
-streamlit.text(df)
+#streamlit.text(df)
+
+color_list = df[0].values.tolist()
+print(color_list)
 
 #streamlit.text("Hello from Snowflake")
 #streamlit.text(my_data_row)
